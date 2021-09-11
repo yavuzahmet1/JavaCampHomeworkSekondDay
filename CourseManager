@@ -1,0 +1,12 @@
+public class CourseManager {
+    public void addToList(Course course){
+        System.out.println("Kurs eklenmiştir\t:"+ course.getCourseName());
+    }
+    public void deleteToList(Course course){
+        System.out.println("Kurs listeden silinmiştir\t:"+course.getCourseName());
+    }
+    public void updateToList(Course course){
+        System.out.println("Kurs ismi güncellenmiştir\t:"+course.getCourseName());
+    }
+
+}
