@@ -1,0 +1,49 @@
+public class Course {
+    private int id;
+    private String teacher;
+    private String courseName;
+    private int totalCourseHours;
+
+    public Course() {
+        System.out.println("Burada parametresiz contructor kullanıldı");
+    }
+
+    public Course(int id, String teacher, String courseName, int totalCourseHours) {
+        this.setId(id);
+        this.setTeacher(teacher);
+        this.setCourseName(courseName);
+        this.setTotalCourseHours(totalCourseHours);
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getTeacher() {
+        return teacher;
+    }
+
+    public void setTeacher(String teacher) {
+        this.teacher = teacher;
+    }
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    public int getTotalCourseHours() {
+        return totalCourseHours;
+    }
+
+    public void setTotalCourseHours(int totalCourseHours) {
+        this.totalCourseHours = totalCourseHours;
+    }
+}
