@@ -1,0 +1,24 @@
+public class Main {
+
+    public static void main(String[] args) {
+        Course course1 = new Course(100, "Engin DEMİROĞ", "Yazılım Geliştirici Yetiştirme Kampı (C# + ANGULAR)", 50);
+        Course course2 = new Course(101, "Engin DEMİROĞ", "Yazılım Geliştirici Yetiştirme Kampı (JAVA + REACT)", 46);
+        Course course3 = new Course(102, "Engin DEMİROĞ", "Programlamaya Giriş için Temel Kurs", 50);
+        Course course4 = new Course();//parametresiz intence
+        course4.setId(105);
+        course4.setTeacher("Engin DEMİROĞ");
+        course4.setCourseName("Sektöre hazırlık aşılaması");
+        course4.setTotalCourseHours(20);
+        int a = 0;
+        Course[] courses = new Course[]{course1, course2, course3, course4};//Kurs verileri dizilere aldık.
+        for (Course course : courses) {
+            a++;
+            System.out.println("Liste\t: "+a+" "+course.getCourseName());
+        }
+        System.out.println("------------------");
+        CourseManager courseManager = new CourseManager();
+        courseManager.addToList(course1);
+        courseManager.deleteToList(course4);
+        courseManager.updateToList(course2);
+    }
+}
